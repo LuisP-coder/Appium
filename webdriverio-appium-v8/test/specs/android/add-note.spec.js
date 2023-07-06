@@ -27,5 +27,24 @@ describe('Add Notes', () => {
             .toBeDisplayed();
         await expect($('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/view_note"]'))
             .toHaveText("Skyrim\nBattlefield 3\nMinecraft");
+        await driver.back();
+
+        // Click on side menu
+        await $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/icon_nav"]').click();
+
+        // Click on theme
+        await $('//*[@text="Theme"]').click();
+
+        // Select Theme
+        await $('//android.widget.TextView[@text="Dark"]').click();
+
+        // Search bar
+        await $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/main_btn2"]')
+            .click();
+
+        await $('//*[@text="Search"]').click();
+
+        await $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_search"]')
+            .addValue("Fav Games");
     });
 });
