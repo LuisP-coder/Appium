@@ -1,0 +1,26 @@
+{
+  "name": "webdriverio-appium",
+  "version": "1.0.0",
+  "description": "Appium test using WebdriverIO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "keywords": [
+    "webdriverio",
+    "appium"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^8.11.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.6",
+    "@babel/core": "^7.22.6",
+    "@babel/preset-env": "^7.22.6",
+    "@babel/register": "^7.22.5",
+    "eslint-plugin-wdio": "^8.8.7"
+  }
+}
