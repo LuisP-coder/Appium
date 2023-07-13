@@ -25,9 +25,4 @@ describe('Api demo app', () => {
         await driver.back();
         await driver.back();
     });
-
-    // it('', async() => {
-    //     await $('~').click();
-
-    // });
 });
