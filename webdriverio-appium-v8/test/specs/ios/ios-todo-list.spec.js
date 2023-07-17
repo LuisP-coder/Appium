@@ -19,4 +19,11 @@ describe('Todo List', () => {
         await $('//*[@value="Due"]').addValue('Tomorrow');
         await $('~Create').click();
     });
+
+    it('Mark one item as done', async() => {
+        // Selecting first item 
+        // await $(`-ios class chain:${itemDone}`).click();
+        await driver.execute("mobile: swipe", {'element': '//*[@value="Things"]',  direction: "left" });
+        
+    });
 });
