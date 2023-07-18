@@ -18,5 +18,12 @@ describe('Todo List', () => {
         await $('//*[@value="Title"]').addValue('To-Do');
         await $('//*[@value="Due"]').addValue('Tomorrow');
         await $('~Create').click();
+
+        // Go back to Home page
+        await $('//*[@name="Lists"]').click();
+
+        // Scroll up and down
+        await driver.execute('mobile: scroll', { direction: "down" });
+        await driver.execute('mobile: scroll', { direction: "up" });
     });
 });
