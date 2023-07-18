@@ -24,6 +24,5 @@ describe('Todo List', () => {
         // Selecting first item 
         // await $(`-ios class chain:${itemDone}`).click();
         await driver.execute("mobile: swipe", {'element': '//*[@value="Things"]',  direction: "left" });
-        
     });
 });
