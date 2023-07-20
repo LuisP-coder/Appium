@@ -18,7 +18,7 @@ describe('iOS Native Features', () => {
         await driver.execute('mobile: scroll', { direction: "down" });
         await driver.execute('mobile: scroll', { direction: "up" });
 
-        // complex
+        // complex version
         // await $('~Picker View').click();
         // const redPicker = await $('~Red color component value');
         // const bluePicker = await $('~Blue color component value');
