@@ -6,7 +6,7 @@ describe('iOS Native Features', () => {
         // click ok 
         // await $('~Ok').click();
 
-        // accept dissmiss alert
+        // accept dismiss alert
         await driver.dismissAlert();
 
         // assertion 
