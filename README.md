@@ -1,2 +1,2 @@
 # Appium
-Repo stores my Appium Automation tests projects
+Repo stores my Appium WebdriverIOAutomation tests projects
