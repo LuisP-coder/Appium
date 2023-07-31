@@ -9,7 +9,7 @@ describe('Settings', () => {
     it('Change Keyboard Settings', async() => {
         // Enter Keyboard Settings
         await $('//*[@name="Keyboard"]').click();
-        // Edit Keyboard settings
+        // Check Keyboards
         const keyboard = '**/XCUIElementTypeStaticText[`label == "Keyboards"`][2]';
         await $(`-ios class chain:${keyboard}`).click();
         await $('//*[@label="Edit"]').click();
