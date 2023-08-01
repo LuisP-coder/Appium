@@ -8,6 +8,7 @@ config.path = '/wd/hub';
 // Specs
 config.specs = [
     // ToDo: define location for spec files here
+    // '../test/specs/ios/ios-settings*.js'
     '../test/specs/ios/ios-todo-list*.js'
     // '../test/specs/ios/*.js'
 ];
