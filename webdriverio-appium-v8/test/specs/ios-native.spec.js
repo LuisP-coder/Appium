@@ -3,8 +3,7 @@ describe('iOS Native Features', () => {
         await $('~Alert Views').click();
         await $('~Okay / Cancel').click();
 
-        // click ok 
-        // await $('~Ok').click();
+        // click ok
 
         // accept dismiss alert
         await driver.dismissAlert();
