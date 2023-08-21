@@ -3,10 +3,9 @@ describe('iOS Native Features', () => {
         await $('~Alert Views').click();
         await $('~Okay / Cancel').click();
 
-        // click ok 
-        // await $('~Ok').click();
+        // click ok
 
-        // accept dissmiss alert
+        // accept dismiss alert
         await driver.dismissAlert();
 
         // assertion 
@@ -18,7 +17,7 @@ describe('iOS Native Features', () => {
         await driver.execute('mobile: scroll', { direction: "down" });
         await driver.execute('mobile: scroll', { direction: "up" });
 
-        // complex
+        // complex version
         // await $('~Picker View').click();
         // const redPicker = await $('~Red color component value');
         // const bluePicker = await $('~Blue color component value');
