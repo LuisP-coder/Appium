@@ -9,6 +9,7 @@ describe('Reminder', () => {
         const locationv2 = await $(`~ios class chain:${location}`).isDisplayed();
         const welcome = await $('//*[@name="Welcome to Reminders"]').isDisplayed();
 
+        // Only if pop-ups are shown
         if(locationv2){
             await $('//*[@name="Allow While Using App"]').click();
         } else if(welcome){
