@@ -48,6 +48,8 @@ describe('Reminder', () => {
 
         // Select time
         await $('//*[@name="Time"]').click();
+
+        // Priority Level
         await $('~None').click();
         await $('~Medium').click();
 
