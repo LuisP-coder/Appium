@@ -46,6 +46,7 @@ describe('Reminder', () => {
         await $(`-ios predicate string:${'label == "Never"'}`).click();
         await $(`-ios predicate string:${'label == "Daily"'}`).click();
 
+        // Select time
         await $('//*[@name="Time"]').click();
         await $('~None').click();
         await $('~Medium').click();
