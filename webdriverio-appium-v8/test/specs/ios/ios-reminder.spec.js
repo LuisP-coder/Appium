@@ -31,11 +31,12 @@ describe('Reminder', () => {
         const date = '**/XCUIElementTypeSwitch[`label == "Date"`]';
         await $(`-ios class chain:${date}`).click();
 
-        // To close pop up if needed
+        // To close pop-up if needed
         const neverMiss = '**/XCUIElementTypeStaticText[`label == "Never Miss a Reminder"`]';
         const never = await $(`~ios class chain${neverMiss}`).isDisplayed();
         const noti = await $('//*[@name="Reminders” Would Like to Send You Notifications"]').isDisplayed();
 
+        // Used only if pop-ups are displayed
         if(noti){
             await $(`//*[@name="Don't Allow"]`).click();
         } else if(never){
