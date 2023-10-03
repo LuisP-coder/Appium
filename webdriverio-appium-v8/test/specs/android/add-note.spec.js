@@ -10,19 +10,19 @@ describe('Add Notes', () => {
         await $('//*[@text="Text"]').click();
         await expect($('//*[@text="Editing"]')).toBeDisplayed();
 
-        // add title
+        // Add title
         await $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_title"]')
             .addValue("Fav Games");
 
-        // add body
+        // Add body
         await $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_note"]')
             .addValue("Skyrim\nBattlefield 3\nMinecraft");
 
-        // save changes
+        // Save changes
         await driver.back();
         await driver.back();
 
-        // assertion
+        // Assertion
         await expect($('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_btn"]'))
             .toBeDisplayed();
         await expect($('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/view_note"]'))
