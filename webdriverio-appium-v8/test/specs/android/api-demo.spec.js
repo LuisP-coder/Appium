@@ -1,4 +1,4 @@
-describe('Api demo app', () => {
+describe('Api demo App', () => {
     it('Game Controller Input', async() => {
         await $('~Views').click();
 
