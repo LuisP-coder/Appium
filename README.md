@@ -1,2 +1,2 @@
 # Appium
-Repo stores my Appium WebdriverIO Mobile Automation tests projects using Javascript
+Repo contains Appium WebdriverIO Mobile Automation tests projects using Javascript
