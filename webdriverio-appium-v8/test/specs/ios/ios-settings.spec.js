@@ -35,3 +35,4 @@ describe('Settings', () => {
         await $(`-ios class chain:${autoCor}`).click();
     });
 });
+
