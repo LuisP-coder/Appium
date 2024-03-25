@@ -5,7 +5,7 @@ describe('Add Notes', () => {
         await expect($('//*[@text="Add note"]')).toBeDisplayed();
     });
 
-    it('add a note, save changes & verify note', async() => {
+    it('Add a note, save changes & verify note', async() => {
         await $('//*[@text="Add note"]').click();
         await $('//*[@text="Text"]').click();
         await expect($('//*[@text="Editing"]')).toBeDisplayed();
