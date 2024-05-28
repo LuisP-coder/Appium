@@ -19,7 +19,7 @@ describe('Android Elements Tests', () => {
         await expect(className).toHaveText('API Demos');
     });
 
-    it('Find elements by Xpath', async() => {
+    it('Find Elements by Xpath', async() => {
         // xpath -- (//tagname[@attribute=value])
         await $('//android.widget.TextView[@content-desc="Alert Dialogs"]').click();
 
