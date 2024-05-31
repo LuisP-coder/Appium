@@ -1,4 +1,4 @@
-describe('Todo List', () => {
+describe('To-do List', () => {
     it('Create a Todo List', async() => {
         await $('//*[@name="Create list"]').click();
         await $('//*[@value="List Name"]').addValue("Things to do today");
