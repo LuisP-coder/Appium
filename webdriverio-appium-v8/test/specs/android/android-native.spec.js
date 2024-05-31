@@ -21,7 +21,6 @@ describe('Android Native Features Tests', () => {
         // click Ok
         await $('//*[@resource-id="android:id/button1"]').click();
 
-        // 
         await expect($('//*[@resource-id="android:id/alertTitle"]')).not.toExist();
     });
 
