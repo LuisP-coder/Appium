@@ -23,6 +23,5 @@ describe('Api Demo App', () => {
 
         await $('//android.widget.Button[@content-desc="Clear"]').click();
         await driver.back();
-        await driver.back();
     });
 });
