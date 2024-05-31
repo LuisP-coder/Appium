@@ -9,7 +9,6 @@ describe('Api Demo App', () => {
 
         await expect(('//*[@resource-id="io.appium.android.apis:id/game"]')).not.toBeExisting();
         await driver.back();
-        await driver.back();
     });
 
     it('Adding text', async() => {
